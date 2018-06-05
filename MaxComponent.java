@@ -13,7 +13,6 @@ public class MaxComponent {
         for (int i = 0; i < m; i++) g.addEdge(read.nextInt(), read.nextInt());
         g.DFS();
         g.watch();
-
     }
 }
 
@@ -74,7 +73,6 @@ class Graph {
                         c.vertexes++;
                         for (Vertex e = v.next; e != null; e = e.next, c.edges++)
                             if (g[e.num].mark == 'w') s.push(g[e.num]);
-
                     }
                 }
                 if ((c.vertexes > mc.vertexes) | ((c.vertexes == mc.vertexes) && (c.edges > mc.edges))) mc = c;
